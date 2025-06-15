@@ -15,7 +15,7 @@
     "framer-motion": "^10.16.16",
     "js-yaml": "^4.1.0",
     "livekit-client": "^2.1.5",
-    "livekit-server-sdk": "^2.1.2",
+    "livekit-server-sdk": "^2.13.0",
     "lodash": "^4.17.21",
     "next": "^14.0.4",
     "qrcode.react": "^3.1.0",

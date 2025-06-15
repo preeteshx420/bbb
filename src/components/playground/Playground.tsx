@@ -26,6 +26,7 @@ import {
   useRoomInfo,
   useTracks,
 } from "@livekit/components-react";
+import { CallHistoryPanel } from "../playground/callhistory";
 import {
   ConnectionState,
   LocalParticipant,
@@ -535,6 +536,14 @@ export default function Playground({
           childrenClassName="h-full grow items-start"
         >
           {settingsTileContent}
+        </PlaygroundTile>
+        {/* Call History Panel Integration */}
+        <PlaygroundTile
+          title="Call History"
+          className="h-full grow basis-1/4 hidden lg:flex" // Occupies similar space to Chat/Settings
+          childrenClassName="flex flex-col" // Ensure children can grow and scroll if needed
+        >
+          <CallHistoryPanel />
         </PlaygroundTile>
       </div>
     </>
